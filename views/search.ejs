@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>The MDB Search</title>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class="back-button-container">
+            <a href="/">Back to Home</a>
+        </div>
+
+      <div class="form-container">
+        <form action="/search" method="POST">
+          <input
+            type="text"
+            name="movieTitle"
+            id=""
+            placeholder="Enter movie title"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <% if (movieDetails) { %>
+
+      <div class="result-container">
+        <ul class="movie-data-list">
+          <li><%= movieDetails.title %></li>
+          <li class="movie-year">
+            <span><%= movieDetails.year %></span> &#8226
+            <span><%= movieDetails.rating%></span>/10
+          </li>
+          <li class="movie-genres"><%= movieDetails.genres %></li>
+        </ul>
+        <div class="image-container">
+          <img src="<%= movieDetails.posterUrl %>" alt="" />
+        </div>
+        <ul class="movie-overview-container">
+          <li>Overview</li>
+          <p><%= movieDetails.overview %></p>
+        </ul>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>

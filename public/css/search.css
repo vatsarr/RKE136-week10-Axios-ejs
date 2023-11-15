@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  margin: 3rem auto;
+  width: 75%;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container input {
+  font-size: 1.5rem;
+  background-color: darkgrey;
+  border: 0.5px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-container input::placeholder {
+  opacity: 0.7;
+  color: white;
+}
+
+.form-container button {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  display: block;
+  background-color: #5cb85c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-container button:hover {
+  transform: scale(1.05);
+}
+
+.form-container button:active {
+  transform: scale(0.95);
+  background-color: #458845;
+}
+
+.result-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.movie-data-list {
+  font-size: 2rem;
+  font-weight: bold;
+  list-style: none;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.movie-year {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+.movie-genres {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.result-container img {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.result-container img:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.movie-overview-container {
+  margin: 1rem auto;
+  list-style: none;
+  line-height: 2rem;
+  width: 75%;
+}
+
+.movie-overview-container li {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.movie-overview-container p {
+  font-size: 1rem;
+}
